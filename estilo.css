@@ -1,0 +1,132 @@
+/* Estilização dos elementos gerais da página e seções */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: black;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.nome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.navegacao {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.navegacao a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+}
+.navegacao a:hover {
+  opacity: 0.8;
+}
+main {
+  margin-top: 80px;
+}
+.section {
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.corpo {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilização do grid para a formação acadêmica */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.grid-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Estilização do formulário de contato */
+.formulario {
+  margin-bottom: 1.5rem;
+}
+.formulario label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+.formulario textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.botao {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+/* Classe utilizada para ocultar seções da página HTML */
+.hidden {
+  display: none;
+}
